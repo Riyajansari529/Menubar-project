@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      if($(this).scrollTop()>100){
+        $('.menu').addClass("Sticky")
+      }
+      else
+      {
+        $ ('.menu').removeClass("sticky")
+      }
+    })
+  </script>
+</head>
+<body>
+     <div class="text">
+         <h1> Sticky Navigation Bar</h1>
+     </div>
+     <ul class="menu">
+         <li><a href="#" title="Home">Home</a></li>
+         <li><a href="#" title="About">About </a></li>
+         <li><a href="#" title="Service">Service </a></li>
+         <li><a href="#" title="Portfolio">Portfolio </a></li>
+         <li><a href="#" title="Contacts">Contacts </a></li>
+        </ul>
+        
+</body>
+</html>

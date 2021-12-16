@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sliding Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+       <h1 class="brand"><a href="#"> Riyaz Totorial</a></h1>
+       <ul>
+         <li><a href="#" title="Home">Home</a></li>
+         <li><a href="#" title="About">About</a></li>
+         <li><a href="#" title="Service">Service</a></li>
+         <li><a href="#" title="Portfolio">Portfolio</a></li>
+         <li><a href="#" title="Contacts">contacts</a></li>
+       </ul>
+       <div style="clear: both"></div>
+     </nav>
+     <div class="responsive-bar">
+       <h3 class="brand"><a href="#">Riyaz Totorial</a></h3>
+       <h4 class="menu">Menu</h4>
+       <div style="clear: both"></div>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script type="text/javascript">
+           $(document).ready(function(){
+               $(".menu").click(function(){
+                 $(".nav").slideToggle(500);
+               })
+           })
+     </script>
+     <img src="D:\online totorial\project 7\images\flower2.jpg" alt="photo">
+</body>
+</html>
